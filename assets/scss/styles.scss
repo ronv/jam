@@ -1,0 +1,209 @@
+/*@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url(/fonts/Inter.var.woff2);
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+*, *:before, *:after {
+  box-sizing: inherit;
+  //padding: 0;
+  //margin: 0;
+}
+html, body {
+  height: 100%;
+}
+html {
+  font-size: 100%;
+  //font-size: calc(.9em + 0.33vw);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: normal;
+  min-height: 100%;
+}
+
+body {
+  //font-size: 1rem;
+  //font-family: 'Newsreader', serif;
+  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #333;
+  margin: 0;
+  //font-weight: 400;
+}
+
+h1 { font-size: 1.50em; }
+h2 { font-size: 1.40em; }
+h3 { font-size: 1.20em; }
+h4 { font-size: 1.00em; }
+h5 { font-size: 0.85em; }
+h6 { font-size: 0.75em; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5em;
+  //font-family: 'Dongle', sans-serif;
+}
+
+a {
+  color: #333;
+  //text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+blockquote {
+  border-left: 0.25em solid #333;
+  padding-left: 0.5em;
+  margin-left: 0;
+}
+
+ul, ol {
+  padding: 0 0 1rem 1rem;
+  list-style-type: square;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Improvements to inline code blocks */
+code, pre {
+  font-family: San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;
+}
+pre, code {
+  font-size: small;
+  //background: #f6f6f6;
+}
+code {
+  //font-size: inherit;
+  background-color: #333;
+  color: #fff;
+  padding: 0.2rem 0.4rem;
+  //border-radius: 9999px;
+  //border: 1px solid #333;
+}
+
+pre code {
+  display: block;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  //box-shadow: 5px 5px 5px #eee;
+  padding: 1em;
+  //background: none;
+  overflow-x: auto;
+  //border-radius: .9rem;
+}
+
+img {
+  max-width: 100%;
+  //border-radius: .9rem;
+}
+
+main {
+  max-width: 70ch; /* make sure to also change this in the media query */
+  margin: 0 auto;
+  //margin-top: 10pt;
+  //margin-bottom: 10pt;
+  box-sizing: border-box;
+  //box-shadow: 0 0 10px rgba(50, 50, 50, .17);
+  //max-height: 100vh;
+  min-height: 100%;
+  background-color: white;
+
+}
+
+footer {
+  //text-align: center;
+  //font-size: 80%;
+  border-top: 1px solid #333;
+  background-color: #fff;
+  padding: 2rem;
+  max-width: 70ch; /* make sure to also change this in the media query */
+  margin: 0 auto;
+  color: #333;
+}
+
+.content h1 {
+  margin-top: 0;
+  //margin-bottom: 0;
+}
+/*
+.body-list p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+*/
+.list {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: inherit;
+  font-weight: inherit;
+}
+.list li a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 20px;
+}
+time {
+  font-variant-numeric: tabular-nums;
+}
+
+header {
+  background-color: #fff;
+  padding: 2rem;
+  border-bottom: 1px solid #333;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: .5rem;
+}
+
+nav li {
+  margin-right: .5em;
+  display: inline;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a:hover {
+  color: #505050;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 140%;
+  line-height: 1em;
+  text-decoration: none;
+  color: inherit;
+}
+
+.content {
+  padding: 2rem;
+  word-wrap: break-word;
+}
+
+.content p a {
+  text-decoration: underline;
+}

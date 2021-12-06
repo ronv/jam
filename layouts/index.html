@@ -1,0 +1,25 @@
+{{ define "main" }}
+  
+  {{ .Content }}
+  
+  {{ if gt ( len ( where .Pages "Section" "writing" )) 0 }}
+    <h2>Latest articles</h2>
+    {{ range first 3 ( where .Site.RegularPages "Section" "writing" ) }}
+      <article class="list">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <time>{{ .Date.Format "02/01/2006" }}</time>
+      </article>
+    {{ end }}
+  {{ end }}
+
+  {{ if gt ( len ( where .Pages "Section" "projects" )) 0 }}
+    <h2>Latest projects</h2>
+    {{ range first 3 ( where .Site.RegularPages "Section" "projects" ) }}
+      <article class="list">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <time>{{ .Date.Format "02/01/2006" }}</time>
+      </article>
+    {{ end }}
+  {{ end }}
+
+{{ end }}

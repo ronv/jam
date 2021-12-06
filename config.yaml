@@ -1,0 +1,56 @@
+baseurl: ''
+languageCode: en-us
+title: Jam Hugo theme
+googleAnalytics: ""
+disqusShortname: ""
+//preserveTaxonomyNames: true
+footnotereturnlinkcontents: ↩
+disableHugoGeneratorInject: true
+pluralizeListTitles: false
+pygmentsCodeFences: false
+pygmentsUseClasses: false
+minify: true
+
+permalinks:
+  writing: /:year/:month/:day/:slug/
+  projects: /:year/:month/:day/:slug/
+
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "About"
+      url: "/about/"
+      weight: 2
+    - name: "Writing"
+      url: "/writing/"
+      weight: 2
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 5
+
+params:
+  description: "Jam is a minimal personal blog and portfolio theme powered by Hugo."
+  FooterText: "© Jam Theme"
+
+frontmatter:
+  author: Ronalds Vilcins
+  github: 'https://github.com/ronv'
+  facebook: 'https://facebook.com/####'
+  og_image: /images/####
+  sitename: ######
+  twitter: '######'
+
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
+
+outputFormats:
+  RSS:
+    mediatype: application/rss
+    baseName: atom
+
+
